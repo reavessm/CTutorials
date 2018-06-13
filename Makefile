@@ -1,7 +1,11 @@
-GCC = g++ -O3 -Wall 
+GCC = g++ 
 
 default:
-	@echo "Please type 'make cleanAll' to clean subdirectories"
+	@echo "make cleanAll -> clean subdirectories"
+	@echo "make readme   -> edit README.md"
 
 cleanAll:
 	rm */thing */*.o
+
+readme:
+	vim README.md
