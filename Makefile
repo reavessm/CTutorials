@@ -5,7 +5,7 @@ default:
 	@echo "make readme   -> edit README.md"
 
 cleanAll:
-	rm */thing */*.o
+	@rm */thing */*.o
 
 readme:
-	vim README.md
+	@vim README.md; pandoc -V geometry:margin=1in -f markdown README.md -o README.pdf
