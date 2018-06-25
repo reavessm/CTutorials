@@ -1,4 +1,5 @@
 GCC = g++ 
+DIR = new
 
 default:
 	@echo "make cleanAll -> clean subdirectories"
@@ -9,3 +10,6 @@ cleanAll:
 
 readme:
 	@vim README.md; pandoc -V geometry:margin=1in -f markdown README.md -o README.pdf
+
+new:
+	@cp -r ./.Blank/ $(DIR)

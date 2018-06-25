@@ -6,7 +6,6 @@ extern int c;
 extern float f;
 
 int main() {
-
   // Variable Definition
   int a;
   int b, c;
@@ -16,10 +15,10 @@ int main() {
   a = 10;
   b = 20;
 
-  c = a+b;
+  c = a + b;
   printf("Value of 'c' : %d \n", c);
 
-  f = 70.0/3.0;
+  f = 70.0 / 3.0;
   printf("Value of 'f' : %f \n", f);
 
   return 0;
