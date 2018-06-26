@@ -1,8 +1,16 @@
-% Example C Programs
-% Stephen Reaves
-% June 25, 2018
+### HelloWorld
 
-## Const
+```c
+#include <stdio.h>
+
+int main() {
+  printf("Hello World!\n");
+
+  return 0;
+}
+```
+
+### Const
 
 ```c
 #include <stdio.h>
@@ -32,7 +40,7 @@ int main() {
 }
 ```
 
-## Extern
+### Extern
 
 ```c
 #include <stdio.h>
@@ -51,19 +59,7 @@ extern int count;
 void write_extern(void) { printf("Count is %d\n", count); }
 ```
 
-## HelloWorld
-
-```c
-#include <stdio.h>
-
-int main() {
-  printf("Hello World!\n");
-
-  return 0;
-}
-```
-
-## SizeOf
+### SizeOf
 
 ```c
 #include <float.h>
@@ -92,7 +88,7 @@ int main() {
 }
 ```
 
-## StorageClass
+### StorageClass
 
 ```c
 #include <stdio.h>
@@ -121,7 +117,7 @@ void func(void) {
 }
 ```
 
-## VarDec
+### VarDec
 
 ```c
 #include <stdio.h>
