@@ -1,6 +1,8 @@
 GCC = g++ 
 DIR = new
 
+.PHONY: default cleanAll readme new contents
+
 default:
 	@echo "make cleanAll -> clean subdirectories"
 	@echo "make readme   -> edit README.md"
@@ -13,3 +15,6 @@ readme:
 
 new:
 	@cp -r ./.Blank/ $(DIR)
+
+contents:
+	contents.sh

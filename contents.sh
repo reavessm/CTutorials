@@ -1,5 +1,7 @@
 #!/bin/bash
 
+outDir=.
+
 MD=CPrograms.md
 TITLE=title.md
 
@@ -48,8 +50,8 @@ do
 done
 
 cat $TITLE $MD | pandoc -s --highlight-style=espresso -V geometry:margin=1in --toc \
-  -f markdown -o /mnt/c/Users/sreaves/Desktop/CPrograms.pdf
+  -f markdown -o $outDir/CPrograms.pdf
 
 cat highlight.js styleLink.html title.html $MD | pandoc \
   --highlight-style=espresso -V geometry:margin=1in --toc -f markdown \
-  -o /mnt/c/Users/sreaves/Desktop/CPrograms.html
+  -o $outDir/CPrograms.html
