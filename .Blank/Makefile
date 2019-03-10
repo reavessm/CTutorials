@@ -2,10 +2,10 @@ GCC = g++ -O3 -Wall
 
 thing: $(OBJS)
 	$(GCC) -o $@ *.c
-	./thing
+	@./thing
 
 run: thing
 	clear; ./thing | less
 
 clean:
-	rm -rf thing
+	@rm -rf thing
